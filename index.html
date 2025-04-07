@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/input.css">
+</head>
+<body>
+    <div class="main">
+        <div class="allbox">
+            <div class="first_part">
+                <h1>Quiz App</h1>
+                <label for="">Number of Question
+                <select name="" id="num_question">
+                    <option value="select">--Select--</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="no">No Option avalable</option>
+                </select>
+                <p style="font-size: 15px; color: red; display: none;" id="num_question_p">*Please Select any One Option*</p>
+            </label>
+                <label for="">Select Category
+                <select name="" id="select_catagory">
+                    <option value="no">--Any Category--</option>
+                    <option value="HTML">Web Design</option>
+                </select>
+                <p style="font-size: 15px; color: red; display: none;" id="select_catagory_p">*Please Select any One Option*</p></label>
+                <label for="">Select Defficulty
+                <select name="" id="select_defficult">
+                    <option value="select">--Select--</option>
+                    <option value="Hard">Hard</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Pro">Pro</option>
+                </select>
+                <p style="font-size: 15px; color: red; display: none;" id="select_defficult_p">*Please Select any One Option*</p></label>
+                <label for="">Select Time Per Question
+                <select name="" id="select_time">
+                    <option value="select">--Select--</option>
+                    <option value="5">5 Second</option>
+                    <option value="10">10 Second</option>
+                    <option value="15">15 Second</option>
+                </select>
+                <p style="font-size: 15px; color: red; display: none;" id="select_time_p">*Please Select any One Option*</p></label>
+                <button onclick="submit()">Start Quiz</button>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="question_1">
+                <div class="line">
+                    <div class="sub_line"></div>
+                    <p id="counter"></p>
+                </div>
+                <div class="question_heading">
+                    <h2>Question</h2>&emsp;
+                    <p class="total_q"></p>
+                </div>
+                <div class="question_div"><p id="question"> </p></div>
+                <div class="option_grp">
+                    <div class="option_0">
+                        <p id="option_no0"> </p>
+                        <input type="radio" name="pritam" id="input_1" onclick="q_check(0)">
+                    </div>
+                    <div class="option_1">
+                        <p id="option_no1"> </p>
+                        <input type="radio" name="pritam" id="input_2" onclick="q_check(1)">
+                    </div>
+                    <div class="option_2">
+                        <p id="option_no2"> </p>
+                        <input type="radio" name="pritam" id="input_3" onclick="q_check(2)">
+                    </div>
+                    <div class="option_3">
+                        <p id="option_no3"> </p>
+                        <input type="radio" name="pritam" id="input_4" onclick="q_check(3)">
+                </div>
+                <button onclick="next()" id="next">Next</button>
+            </div>
+            <div class="score_box">
+                <h1 id="marks"></h1>
+                <button onclick="home()">Back to Home</button>
+            </div>
+        </div>
+    </div>
+    <script src="java.js">
+
+    </script>
+</body>
+</html>
